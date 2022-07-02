@@ -1,0 +1,34 @@
+{
+  "name": "co.moda",
+  "version": "1.0.0",
+  "description": "Somos un emprendimiento familiar dedicado a la venta\r de pantuflas. Nuestro objetivo primordial es el confort\r sin dejar de lado la tendencia de la moda.\r Cada diseño es pensado con mucha dedicación, con el \r objetivo de mostrarle al público un producto novedoso,\r soñado, y de buena calidad.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuMug/co.moda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuMug/co.moda/issues"
+  },
+  "homepage": "https://github.com/ManuMug/co.moda#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-generator": "^4.16.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "http-errors": "^2.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.18",
+    "path": "^0.12.7"
+  }
+}
