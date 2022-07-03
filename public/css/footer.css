@@ -1,0 +1,31 @@
+ @import url("https://use.typekit.net/yrf1bfv.css");
+
+  @import url("https://use.typekit.net/yrf1bfv.css");
+ :root{
+    --BelyDisplay:bely-display,sans-serif;
+    --ProximaNova:proxima-nova, sans-serif;
+ }
+* { font-family: var(--BelyDisplay);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.sectionFooter {
+    background-color: #F49904;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.contactoFooter {
+    color: #F9F4E1;
+}
+
+.copyright {
+    color: #F9F4E1
+}
+.datosFooter {font-family: var(--ProximaNova);
+color: #012626
+}

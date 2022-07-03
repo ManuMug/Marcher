@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #E3DFC6;
+}
+
+.divImagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.h1home {
+    color: #E9572E;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}

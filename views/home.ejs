@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <h1>Hola</h1>
+    <header><%-include('partials/header.ejs')%></header>
+   <div>
+    <img src="/img/ImagenHome.jpg" alt="FotoHome" width="100%"> 
+   </div>
+   <section>
+    <div><h1 class="h1home"> nuestras categorías </h1></div>
+    <div class="divImagenes">
+        <img src="/img/Disney.jpg" alt="CategoriaDisney" style = "width: 45%; margin: 5px;">
+        <img src="/img/Comida.jpg" alt="CategoriaComida" style = "width: 45%; margin: 5px;">
+        <img src="/img/Animalitos.jpg" alt="CategoriaAnimalitos" style = "width: 91%; margin-top: 5px; margin-bottom: 100px;">
+    </div>
+   </section>
+    <footer><%-include('partials/footer.ejs')%></footer>
 </body>
 </html>
