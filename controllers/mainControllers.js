@@ -1,7 +1,13 @@
+const db = require("../database/models")
+
 const controllers ={
     index: function(req,res){
-        res.render('home')
-    }
+        db.Products.findAll()
+    .then(products=>{
+        res.render("home",{products})
+        
+    })
+    } 
 }
 
 module.exports = controllers
