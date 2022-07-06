@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/listado.css">
+</head>
+
+<body>
+    <header>
+        <%-include('../partials/header.ejs')%>
+    </header>
+    <div>
+        <img src="/img/catalogo.jpg" alt="FotoCatalogo" width="100%">
+    </div>
+    <section>
+        <div class="products-container">
+            <% products.forEach(product=> { %>
+                <a href="/products/detail/<%= product.idProduct %>" class="qsyo">
+                    <article>
+                        <img src="/img/products/<%= product.imagen %>" alt="" style="width:300px;">
+                        <div class="product-card" style="position: relative ;">
+                            <i class="fa-solid fa-dog"></i>
+                            <div class="flex-row">
+                                <p class="price" style="color:var(--azul-fuerte)">$<%= product.precio %>
+                                </p>
+                               
+                            </div>
+                            <h3 class="descripcion" style="color: #5c5c5c;">
+                                <%= product.nombre %>
+                            </h3>
+                            <h3 class="descripcion" style="color: #5c5c5c;">
+                                <%= product.categoria %>
+                            </h3>
+                        </div>
+                    </article>
+                </a>
+                <% }) %>
+        </div>
+    </section>
+    <footer>
+        <%-include('../partials/footer.ejs')%>
+    </footer>
+</body>
+
+</html>

@@ -13,5 +13,9 @@ router.post('/edit/:id', upload.single('imagen'), controllers.processEdit)
 
 router.get('/detail/:id',controllers.detailForm)
 
+router.post("/delete/:id",controllers.delete)
+
+router.get('/list',controllers.listForm)
+
 module.exports = router
 

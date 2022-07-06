@@ -43,7 +43,25 @@ const controllers ={
         .then(products=>{
             res.render('products/productsDetail',{products})
         })
+    },
+    delete:(req, res) =>{
+      db.Products.destroy({
+        where:{
+          idProduct:req.params.id
+        }
+      })
+      res.redirect('/')
+    },
+    listForm:(req, res) =>{
+
+    
+      db.Products.findAll()
+      .then(products =>{
+        res.render('products/listadodeproductos',{products})
+      })
     }
+    
+    
     }
 
 module.exports = controllers
