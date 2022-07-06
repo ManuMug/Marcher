@@ -14,7 +14,7 @@
         <%-include('../partials/header.ejs')%>
     </header>
     <div>
-        <img src="/img/catalogo.jpg" alt="FotoCatalogo" width="100%">
+        <img src="/img/catalogo.jpg" alt="FotoCatalogo" width="100%" style="margin-top: 40px;" >
     </div>
     <section>
         <div class="products-container">
@@ -25,14 +25,14 @@
                         <div class="product-card" style="position: relative ;">
                             <i class="fa-solid fa-dog"></i>
                             <div class="flex-row">
-                                <p class="price" style="color:var(--azul-fuerte)">$<%= product.precio %>
+                                <p class="price" style="color:#F39905">$<%= product.precio %>
                                 </p>
                                
                             </div>
-                            <h3 class="descripcion" style="color: #5c5c5c;">
+                            <h3 class="descripcion" style="color: #E8572F;">
                                 <%= product.nombre %>
                             </h3>
-                            <h3 class="descripcion" style="color: #5c5c5c;">
+                            <h3 class="descripcion" style="color: #E8572F;">
                                 <%= product.categoria %>
                             </h3>
                         </div>
