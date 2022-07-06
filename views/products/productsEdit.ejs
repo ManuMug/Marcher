@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edición de productos</title>
+    <link rel="stylesheet" href="/css/productsCreate.css">
+</head>
+
+<body>
+    <header>
+        <%-include('../partials/header.ejs')%>
+    </header>
+
+    <div class="formulario">
+
+
+        <form action="/products/edit/<%=products.idProduct%>" method="POST" enctype="multipart/form-data" class="formulario">
+            <div class="errores">
+                <ul class="err"></ul>
+            </div><br>
+            <div class="registro">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre de producto" value=<%=products.nombre%>>
+                <input type="number" name="precio" id="precio" placeholder="Precio" value=<%=products.precio%>>
+                <input type="text" name="categorias" id="categorias" placeholder="Categoria" value=<%=products.categorias%>>
+                <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion" value=<%=products.descripcion%>>
+                <input type="file" name="imagen" id="imagen" placeholder="Imagen" value=<%=products.imagen%>>
+            </div>
+
+    </div>
+    </div>
+
+    <div class="buttons">
+        <input type="submit" value="Editar producto" class="btn">
+    </div>
+
+    </form>
+
+
+
+
+
+    <footer>
+        <%-include('../partials/footer.ejs')%>
+    </footer>
+</body>
+
+</html>

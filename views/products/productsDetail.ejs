@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/productsDetail.css">
+    <title>Detalle de producto</title>
+</head>
+<body>
+   <header>
+    <%-include('../partials/header.ejs')%>
+   </header>
+
+   <div class="div-productDetail">
+    <div>
+      <img style="width: 400px;border-radius: 2%;margin-bottom: 10px;margin-top: 10px;" src="/img/products/<%= products.imagen %>">
+    </div>
+
+    <div class="container-Detail">
+      <h1 style="color: #E8572F ; font-size: 34px;margin-bottom: 25px"> <!-- <span>Nombre: </span> -->
+        <span><%= products.nombre %></span>
+      </h1>
+      <h3 style="color: #012626; font-family: var(--ProximaNova); margin-bottom: 25px"> 
+        <%= products.descripcion %>
+      </h3>
+      <h2 style="color: #F49904 ;font-size: 25px; margin-bottom: 25px;"> <!-- <span>Precio:</span> -->
+        $<%= products.precio %>
+      </h2>
+      
+    
+    </div>
+
+  </div><br>
+
+   <footer>
+    <%-include('../partials/footer.ejs')%>
+   </footer>
+
+</body>
+</html>

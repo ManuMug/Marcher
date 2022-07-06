@@ -1,14 +1,33 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #E3DFC6;
 }
 input{
-    width: 40%; margin: 5px;
+    width: 40%; margin: 5px; height: 70px;
 }
 .registro{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+.formulario{
+    margin-top: 40px;
+} 
+.buttons{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.btn{
+    width: 25%;
+}
+.btn:hover{
+    background-color: #F39905;
+    color: #F9F4E1;
 }

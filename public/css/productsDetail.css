@@ -1,0 +1,35 @@
+@import url("https://use.typekit.net/yrf1bfv.css");
+
+@import url("https://use.typekit.net/yrf1bfv.css");
+:root{
+  --BelyDisplay:bely-display,sans-serif;
+  --ProximaNova:proxima-nova, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #E3DFC6;
+}
+.div-productDetail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 10px;
+    align-content: space-around;
+    padding: 10px;
+    justify-content: center;
+    width: 70%;
+    margin-left: 200px;
+}
+.container-Detail{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
