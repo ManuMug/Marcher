@@ -20,22 +20,27 @@
         <div class="products-container">
             <% products.forEach(product=> { %>
                 <a href="/products/detail/<%= product.idProduct %>" class="qsyo">
-                    <article>
-                        <img src="/img/products/<%= product.imagen %>" alt="" style="width:300px;">
-                        <div class="product-card" style="position: relative ;">
+                    <article class="product-article">
+                       <img src="/img/products/<%= product.imagen %>" alt="" style="width:300px;border-top-left-radius:5% ;border-top-right-radius:5% ; "> 
+                      
+                       <div class="product-card" style="position: relative ;">
                             <i class="fa-solid fa-dog"></i>
+
+                            <h2 class="descripcion" style="color: #E8572F; margin-left: 15px; margin-top: 10px;">
+                                <%= product.nombre %>
+                            </h2>
+
                             <div class="flex-row">
-                                <p class="price" style="color:#F39905">$<%= product.precio %>
+                                <p class="price" style="color:#F39905; margin: 15px; font-size:20px;">$<%= product.precio %>
                                 </p>
                                
                             </div>
-                            <h3 class="descripcion" style="color: #E8572F;">
-                                <%= product.nombre %>
-                            </h3>
+                        
                             <h3 class="descripcion" style="color: #E8572F;">
                                 <%= product.categoria %>
                             </h3>
                         </div>
+                
                     </article>
                 </a>
                 <% }) %>

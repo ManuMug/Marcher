@@ -4,9 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body {
     background-color: #E3DFC6;
 }
+
 .products-container {
     display: flex;
     gap: 10px;
@@ -15,4 +17,11 @@ body {
     align-items: flex-start;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.product-article {
+    background-color: #F9F4E1;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
 }
