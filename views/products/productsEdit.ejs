@@ -19,7 +19,7 @@
             <ul class="err"></ul>
         </div>
 
-        <form action="/products/edit/<%=products.idProduct%>" method="POST" enctype="multipart/form-data" class="formulario">
+        <form action="/products/edit/<%=product.idProduct%>" method="POST" enctype="multipart/form-data" class="formulario">
             <% if(typeof errors != 'undefined'){ %>
                 <ul class="claseNueva">
                     <% for (let i = 0; i < errors.length; i++) { %>
@@ -33,11 +33,11 @@
                 <ul class="err"></ul>
             </div><br>
             <div class="registro">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre de producto" value=<%=products.nombre%>>
-                <input type="number" name="precio" id="precio" placeholder="Precio" value=<%=products.precio%>>
-                <input type="text" name="categorias" id="categorias" placeholder="Categoria" value=<%=products.categorias%>>
-                <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion" value=<%=products.descripcion%>>
-                <input type="file" name="imagen" id="imagen" placeholder="Imagen" value=<%=products.imagen%>>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre de producto" value=<%=product.nombre%>>
+                <input type="number" name="precio" id="precio" placeholder="Precio" value=<%=product.precio%>>
+                <input type="text" name="categorias" id="categorias" placeholder="Categoria" value=<%=product.categorias%>>
+                <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion" value=<%=product.descripcion%>>
+                <input type="file" name="imagen" id="imagen" placeholder="Imagen" value=<%=product.imagen%>>
             </div>
 
     </div>
@@ -49,7 +49,7 @@
 
     </form>
 
-<form action="/products/delete/<%=products.idProduct%>"method="POST">
+<form action="/products/delete/<%=product.idProduct%>"method="POST">
     <button type="submit"> eliminar producto
     </button>
 </form>

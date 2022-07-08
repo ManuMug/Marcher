@@ -16,28 +16,28 @@ const controllers ={
           oldData: req.body
         });
       }
-        db.Products.create({
-          nombre: req.body.nombre,
-          precio: req.body.precio,
-          categorias: req.body.categorias,
-          descripcion: req.body.descripcion,
-          imagen: req.file.filename
-        })
-          res.redirect("/")
-      },
-      editForm: (req, res) => {
-        db.Products.findByPk(req.params.id)
-      .then(products => {
-        res.render('products/productsEdit',{products})
-    
+      db.Products.create({
+        nombre: req.body.nombre,
+        precio: req.body.precio,
+        categorias: req.body.categorias,
+        descripcion: req.body.descripcion,
+        imagen: req.file.filename
       })
+        res.redirect("/")
+    },
+    editForm: (req, res) => {
+      db.Products.findByPk(req.params.id)
+      .then(product => {
+        res.render('products/productsEdit',{product})
+    
+      });
     },
     processEdit:(req, res)=>{
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
           return res.render("products/productsEdit", {
             errors: errors.errors,
-            oldData: req.body
+            product:req.body
           });
         }
         db.Products.update({
@@ -51,7 +51,7 @@ const controllers ={
                 idProduct:req.params.id
             }
         })
-        res.redirect('/')
+        res.render('/')
 
     },
     detailForm:(req, res)=>{
