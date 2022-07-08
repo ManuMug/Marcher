@@ -1,7 +1,7 @@
 const {body}=require('express-validator')
 
 const productsValidator= [
-    body('nombre')
+    body('nombre') 
     .notEmpty()
     .withMessage('Nombre obligatorio')
     .isLength({min:3})

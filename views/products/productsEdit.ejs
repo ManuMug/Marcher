@@ -21,9 +21,9 @@
 
         <form action="/products/edit/<%=products.idProduct%>" method="POST" enctype="multipart/form-data" class="formulario">
             <% if(typeof errors != 'undefined'){ %>
-                <ul class="claseInutil">
+                <ul class="claseNueva">
                     <% for (let i = 0; i < errors.length; i++) { %>
-                        <li style="color:red; padding-left: 20px;" class="claseInutil">
+                        <li style="color:red; padding-left: 20px;" class="claseNueva">
                             <%= errors[i].msg %>
                         </li>
                     <% } %> 
