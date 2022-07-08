@@ -15,9 +15,20 @@
     </header>
 
     <div class="formulario">
-
+        <div class="errores">
+            <ul class="err"></ul>
+        </div>
 
         <form action="/products/edit/<%=products.idProduct%>" method="POST" enctype="multipart/form-data" class="formulario">
+            <% if(typeof errors != 'undefined'){ %>
+                <ul class="claseInutil">
+                    <% for (let i = 0; i < errors.length; i++) { %>
+                        <li style="color:red; padding-left: 20px;" class="claseInutil">
+                            <%= errors[i].msg %>
+                        </li>
+                    <% } %> 
+                </ul>
+            <% } %>
             <div class="errores">
                 <ul class="err"></ul>
             </div><br>

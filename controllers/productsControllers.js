@@ -1,4 +1,6 @@
 const db = require("../database/models")
+const {validationResult}=require('express-validator')
+
 const controllers ={
     productsList: function(req,res){
         res.render('products/products')
@@ -6,7 +8,14 @@ const controllers ={
     createForm: function(req,res){
         res.render('products/productsCreate')
     },
-    processCreate: (req, res) => {
+    processCreate: (req, res) => { 
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.render("products/productsCreate", {
+          errors: errors.errors,
+          oldData: req.body
+        });
+      }
         db.Products.create({
           nombre: req.body.nombre,
           precio: req.body.precio,
@@ -24,6 +33,13 @@ const controllers ={
       })
     },
     processEdit:(req, res)=>{
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+          return res.render("products/productsEdit", {
+            errors: errors.errors,
+            oldData: req.body
+          });
+        }
         db.Products.update({
         nombre: req.body.nombre,
           precio: req.body.precio,

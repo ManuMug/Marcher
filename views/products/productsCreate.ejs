@@ -15,18 +15,26 @@
     </header>
 
     <div class="formulario">
-
+        <div class="errores">
+            <ul class="err"></ul>
+        </div>
 
         <form action="/products/create" method="POST" enctype="multipart/form-data" class="formulario">
-            <div class="errores">
-                <ul class="err"></ul>
-            </div><br>
+            <% if(typeof errors != 'undefined'){ %>
+                <ul class="claseInutil">
+                    <% for (let i = 0; i < errors.length; i++) { %>
+                        <li style="color:red; padding-left: 20px;" class="claseInutil">
+                            <%= errors[i].msg %>
+                        </li>
+                    <% } %> 
+                </ul>
+            <% } %>
             <div class="registro">
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre de producto">
                 <input type="number" name="precio" id="precio" placeholder="Precio">
                 <input type="text" name="categorias" id="categorias" placeholder="Categoria">
                 <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion">
-                <input type="file" name="imagen" id="imagen" placeholder="Imagen">
+                <input type="file" name="imagen" id="imagen" placeholder="Imagen" required>
             </div>
 
     </div>
