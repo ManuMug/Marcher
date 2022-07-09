@@ -10,22 +10,22 @@ soñado, y de buena calidad.
 
 # co.moda - vistas
 ### ***Home***
-![Image text](https://github.com/ManuMug/imagenes/blob/main/HOME.png)
+![Image text](https://github.com/ManuMug/imagenes/blob/main/HOMEE.png)
 
 ### ***Catálogo***
-![Image text](https://github.com/ManuMug/imagenes/blob/main/CATALOGO.png)
+![Image text](https://github.com/ManuMug/imagenes/blob/main/CATALOGOo.png)
 
 ### ***Detalle del producto***
-![Image text](https://github.com/ManuMug/imagenes/blob/main/DETALLE%20DE%20PRODUCTO.png)
+![Image text](https://github.com/ManuMug/imagenes/blob/main/DETALLE%20DE%20PRODUCTOO.png)
 
 ### ***Creación de producto***
-![Image text](https://github.com/ManuMug/imagenes/blob/main/CREACION%20DE%20PRODUCTOS.png)
+![Image text](https://github.com/ManuMug/imagenes/blob/main/CREACI%C3%93N%20DE%20PRODUCTOS.png)
 
-### ***Edición de producto***
-![Image text](https://github.com/ManuMug/imagenes/blob/main/EDICI%C3%93N%20DE%20PRODUCTOS.png)
+### ***Edición y eliminación de producto***
+![Image text](https://github.com/ManuMug/imagenes/blob/main/EDICI%C3%93N%20Y%20ELIMINACI%C3%93N%20DE%20PRODUCTO.png)
 
 ### ***Error 404***
-![Image text](https://github.com/ManuMug/imagenes/blob/main/error404.png)
+![Image text](https://github.com/ManuMug/imagenes/blob/main/ERROR%20404.png)
 
 
 
@@ -55,6 +55,20 @@ https://www.figma.com/file/M1dVQMJ2hFM6SbNbEjJBLM/co.moda-creaci%C3%B3n-de-produ
 | Rosa | #F891A2 |
 | Azul |  #002626 |
 | Crema | #F9F4E1 |
+
+## Install
+
+
+```bash
+npm install
+```
+
+## Usage
+
+
+```bash
+npm start
+```
 
 
 ## Authors
