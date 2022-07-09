@@ -23,7 +23,8 @@ https://www.figma.com/file/b7jUGbro02jTSxyYqrWk2B/co.moda-detalle-producto
 # co.moda - boceto vista creación de producto
 https://www.figma.com/file/M1dVQMJ2hFM6SbNbEjJBLM/co.moda-creaci%C3%B3n-de-producto
 
-
+# co.moda - vista de la página
+![Image text](https://github.com/ManuMug/imagenes/blob/main/HOME.png)
 ## Paleta Cromática
 
 | Color             | Hex                                                                |
