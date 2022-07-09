@@ -51,7 +51,7 @@ const controllers ={
                 idProduct:req.params.id
             }
         })
-        res.render('/')
+        res.redirect('/')
 
     },
     detailForm:(req, res)=>{

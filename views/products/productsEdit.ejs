@@ -37,7 +37,7 @@
                 <input type="number" name="precio" id="precio" placeholder="Precio" value=<%=product.precio%>>
                 <input type="text" name="categorias" id="categorias" placeholder="Categoria" value=<%=product.categorias%>>
                 <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion" value=<%=product.descripcion%>>
-                <input type="file" name="imagen" id="imagen" placeholder="Imagen" value=<%=product.imagen%>>
+                <input type="file" name="imagen" id="imagen" placeholder="Imagen" value=<%=product.imagen%> required>
             </div>
 
     </div>
@@ -49,11 +49,11 @@
 
     </form>
 
-<form action="/products/delete/<%=product.idProduct%>"method="POST">
-    <button type="submit"> eliminar producto
+<form action="/products/delete/<%=product.idProduct%>"method="POST" style="display: flex;justify-content: center;">
+    <button type="submit" class="btn"> Eliminar producto
     </button>
 </form>
-
+<br><br>
 
 
     <footer>

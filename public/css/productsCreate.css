@@ -26,6 +26,7 @@ input{
 }
 .btn{
     width: 25%;
+    height: 70px;
 }
 .btn:hover{
     background-color: #F39905;
